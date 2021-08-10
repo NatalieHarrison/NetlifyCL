@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carova Labs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+<body>
+ <section class = "header">
+    <nav>
+        <a href="index.html"><img src="images/logo.mp4"></a>
+        <div class= "nav-links">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="blog.html">Blog</a> </li>
+                <li><div data-netlify-identity-button></div></li>
+            </ul>
+        </div>
+    </nav>
+
+
+ <section class="blog">
+     <h1>Blog</h1>
+     <div class = "form" >
+         <p> Leave a comment</p>
+         <!-- Forms/ Uses Recaptcha V2-->
+         <form name="contact" netlify action = thankyou.html d="POST"  data-netlify-recaptcha="true" data-netlify="true">
+             <style>
+                 .form{
+                     text-align: center;
+                     display: inline-block;
+                 }
+             </style>
+            <p>
+              <label>Email: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <div data-netlify-recaptcha="true"></div>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+         
+    
+     </div>
+
+ </section>
+
+    
+</body>
+</html>
